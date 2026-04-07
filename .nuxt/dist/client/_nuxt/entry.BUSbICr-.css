@@ -1,0 +1,1 @@
+@media(min-width:768px){*{cursor:none!important}}@keyframes spin-custom{0%{transform:rotate(0)}to{transform:rotate(1turn)}}html{scroll-behavior:smooth}

@@ -1,0 +1,155 @@
+const useProjects = () => {
+  const projects = [
+    {
+      id: "kitchen-01",
+      category: "kitchen",
+      title: "The Minimalist Kitchen",
+      description: "A serene space focusing on uncompromised lines and functional flow. Features seamless cabinetry, monolithic stone splashbacks, and integrated appliances.",
+      roomSize: "32 sq m",
+      location: "Central London",
+      date: "October 2025",
+      images: [
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=2600",
+        "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&q=80&w=2600",
+        "https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?auto=format&fit=crop&q=80&w=2600"
+      ]
+    },
+    {
+      id: "kitchen-02",
+      category: "kitchen",
+      title: "Monochrome Culinary Space",
+      description: "Dark matte finishes juxtaposed perfectly against stark white marble. An exploration in high contrast.",
+      roomSize: "45 sq m",
+      location: "New York City",
+      date: "March 2026",
+      images: [
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=2600",
+        "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&q=80&w=2600"
+      ]
+    },
+    {
+      id: "kitchen-03",
+      category: "kitchen",
+      title: "Organic Modern Kitchen",
+      description: "Blending warm wood textures with sleek minimalist lines to create a comforting culinary environment.",
+      roomSize: "28 sq m",
+      location: "Austin, Texas",
+      date: "January 2026",
+      images: [
+        "https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?auto=format&fit=crop&q=80&w=2600",
+        "https://images.unsplash.com/photo-1600488999335-e51c8938221b?auto=format&fit=crop&q=80&w=2600"
+      ]
+    },
+    {
+      id: "bed-01",
+      category: "bedroom",
+      title: "Tranquil Retreat",
+      description: "Designing for deep rest. This master suite uses natural light diffusion, neutral fabrics, and acoustic dampening.",
+      roomSize: "40 sq m",
+      location: "Kyoto, Japan",
+      date: "September 2025",
+      images: [
+        "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&q=80&w=2600",
+        "https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&q=80&w=2600"
+      ]
+    },
+    {
+      id: "bed-02",
+      category: "bedroom",
+      title: "Urban Sanctuary",
+      description: "A compact yet uncompromisingly calm space within the bustling city, employing smart storage and minimalist styling.",
+      roomSize: "22 sq m",
+      location: "Paris, France",
+      date: "December 2025",
+      images: [
+        "https://images.unsplash.com/photo-1522771731470-bea437360f58?auto=format&fit=crop&q=80&w=2600",
+        "https://images.unsplash.com/photo-1617325247661-675ab034e774?auto=format&fit=crop&q=80&w=2600"
+      ]
+    },
+    {
+      id: "bed-03",
+      category: "bedroom",
+      title: "Elevated Slumber",
+      description: "A floating bed frame and soft continuous ambient lighting transform this bedroom into an ethereal space.",
+      roomSize: "55 sq m",
+      location: "Los Angeles",
+      date: "April 2026",
+      images: [
+        "https://images.unsplash.com/photo-1595526051245-4506e0005bd0?auto=format&fit=crop&q=80&w=2600"
+      ]
+    },
+    {
+      id: "living-01",
+      category: "living room",
+      title: "The Gallery Living",
+      description: "A sprawling living area conceived as an art gallery, allowing carefully curated pieces and furniture to breathe.",
+      roomSize: "85 sq m",
+      location: "Miami, Florida",
+      date: "November 2025",
+      images: [
+        "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&q=80&w=2600",
+        "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&q=80&w=2600"
+      ]
+    },
+    {
+      id: "living-02",
+      category: "living room",
+      title: "Subtle Gradients",
+      description: "Using soft gray spectrums to create depth and softness in a highly modern architectural shell.",
+      roomSize: "60 sq m",
+      location: "Berlin, Germany",
+      date: "February 2026",
+      images: [
+        "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=2600",
+        "https://images.unsplash.com/photo-1600210491369-e753d80a41f3?auto=format&fit=crop&q=80&w=2600"
+      ]
+    },
+    {
+      id: "furniture-01",
+      category: "custom furniture",
+      title: "The Monolith Table",
+      description: "A custom dining table carved from a single slab of black travertine, celebrating natural imperfection.",
+      roomSize: "N/A",
+      location: "Studio Edition",
+      date: "Summer 2025",
+      images: [
+        "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&q=80&w=2600",
+        "https://images.unsplash.com/photo-1505693314120-0d443867891c?auto=format&fit=crop&q=80&w=2600"
+      ]
+    },
+    {
+      id: "furniture-02",
+      category: "custom furniture",
+      title: "Architectural Seating",
+      description: "Lounge chairs designed not just for comfort, but as striking structural elements in any room.",
+      roomSize: "N/A",
+      location: "Bespoke Request",
+      date: "Winter 2025",
+      images: [
+        "https://images.unsplash.com/photo-1503602642458-146062fcd0c7?auto=format&fit=crop&q=80&w=2600",
+        "https://images.unsplash.com/photo-1563146473-b54130f40cf4?auto=format&fit=crop&q=80&w=2600"
+      ]
+    }
+  ];
+  const getProjectsByCategory = (category) => {
+    if (!category || category === "all") return projects;
+    return projects.filter((p) => p.category.toLowerCase() === category.toLowerCase().replace("-", " "));
+  };
+  const getCategories = () => {
+    return [
+      { id: "all", name: "All", image: "https://images.unsplash.com/photo-1618221195745-727ca3a6bb52?auto=format&fit=crop&q=80&w=2600" },
+      { id: "kitchen", name: "Kitchen", image: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&q=80&w=2600" },
+      { id: "bedroom", name: "Bedroom", image: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&q=80&w=2600" },
+      { id: "living-room", name: "Living Room", image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=2600" },
+      { id: "custom-furniture", name: "Custom Furniture", image: "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&q=80&w=2600" }
+    ];
+  };
+  return {
+    projects,
+    getProjectsByCategory,
+    getCategories
+  };
+};
+
+export { useProjects as u };
+//# sourceMappingURL=useProjects-CkvNr8XX.mjs.map
